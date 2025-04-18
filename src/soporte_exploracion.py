@@ -63,3 +63,24 @@ def exploracion_dataframe(dataframe, mostrar_unicos=True, max_unicos=10, mostrar
     elif not num_cols:
         print("No hay columnas numéricas.")
     print("-" * 60)
+    
+    
+def clasificar_cesta(n, p25, p75, p95):
+    """
+    Clasifica una factura según el número de productos únicos.
+
+    Parámetros:
+    - n (int): número de productos únicos en la factura
+    - p25, p75, p95 (float): percentiles de referencia
+
+    Retorna:
+    - str: categoría de tamaño de cesta ("Pequeña", "Media", "Grande", "Muy grande")
+    """
+    if n <= p25:
+        return "Pequeña"
+    elif n <= p75:
+        return "Media"
+    elif n <= p95:
+        return "Grande"
+    else:
+        return "Muy grande"
