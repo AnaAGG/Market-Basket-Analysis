@@ -123,7 +123,16 @@ Market-Basket-Analysis/
 
   - `scikit-learn`: soporte para transformaciones
 
----
+
+## Instalación
+
+Para instalar las dependencias del proyecto, ejecuta:
+
+```bash
+pip install -r requirements.txt
+```
+Asegúrate de hacerlo dentro de un entorno virtual para evitar conflictos con otros proyectos.
+
 
 ## Posibles mejoras y próximos pasos
 
